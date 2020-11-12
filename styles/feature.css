@@ -40,6 +40,10 @@ h1.feature__heading {
     box-shadow: 0px 10px 21px -9px rgb(158, 183, 230);
 }
 
+.feature__box:hover {
+    animation: boxShake 1000ms;
+}
+
 .feature__box::before {
     position: absolute;
     content: url('../assets/img/icon-supervisor.svg');
