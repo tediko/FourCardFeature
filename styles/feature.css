@@ -1,7 +1,13 @@
 /* Feature section */
+.feature__wrapper {
+    text-align: center;
+    padding: 0 30px;
+}
+
 h1.feature__heading {
     font-weight: 200;
-    font-size: 2.5rem;
+    font-size: 2.433rem;
+    line-height: 3.6rem;
 }
 
 .feature__span {
@@ -11,26 +17,55 @@ h1.feature__heading {
 .feature__text {
     font-size: 1rem;
     color: var(--clr-blue-grayish);
+    max-width: 533px;
+    margin: 15px auto 65px auto;
 }
 
 .feature__features {
     display: flex;
+    justify-content: center;
+    text-align: left;
 }
 
 .feature__box {
+    position: relative;
     display: flex;
     flex-flow: column;
     background: #fff;
     padding: 25px 32px 32px 32px;
     border-top: 4px solid black;
-    border-radius: 4px;
+    border-radius: 5px;
     height: 250px;
-    max-width: 350px;
-    width: 100%;
+    flex-basis: 350px;
+}
+
+.feature__box::before {
+    position: absolute;
+    content: url('../assets/img/icon-supervisor.svg');
+    bottom: 0;
+    right: 0;
+    padding: 32px;
+}
+
+.feature__box--cyan.feature__box::before {
+    content: url('../assets/img/icon-supervisor.svg');
+}
+
+.feature__box--red.feature__box::before {
+    content: url('../assets/img/icon-team-builder.svg');
+}
+
+.feature__box--orange.feature__box::before {
+    content: url('../assets/img/icon-karma.svg');
+}
+
+.feature__box--blue.feature__box::before {
+    content: url('../assets/img/icon-calculator.svg');
 }
 
 .feature__box--cyan {
     border-color: var(--clr-cyan);
+    align-self: center;
 }
 
 .feature__box--red {
@@ -39,10 +74,17 @@ h1.feature__heading {
 
 .feature__box--orange {
     border-color: var(--clr-orange);
+    margin-top: 30px;
 }
 
 .feature__box--blue {
     border-color: var(--clr-blue);
+    align-self: center;
+}
+
+.feature__box-container {
+    flex-basis: 350px;
+    margin: 0 30px 0 30px;
 }
 
 h2.feature__heading {
