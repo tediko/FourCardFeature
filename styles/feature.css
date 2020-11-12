@@ -4,6 +4,10 @@
     padding: 0 30px;
 }
 
+.feature__top {
+    animation: opacity 1500ms;
+}
+
 h1.feature__heading {
     font-weight: 200;
     font-size: 2.433rem;
