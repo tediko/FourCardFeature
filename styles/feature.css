@@ -38,10 +38,12 @@ h1.feature__heading {
     height: 250px;
     flex-basis: 350px;
     box-shadow: 0px 10px 21px -9px rgb(158, 183, 230);
+    cursor: pointer;
+    transition: transform 250ms ease-in;
 }
 
 .feature__box:hover {
-    animation: boxShake 1000ms;
+    transform: translateY(-8px);
 }
 
 .feature__box::before {
@@ -71,20 +73,24 @@ h1.feature__heading {
 .feature__box--cyan {
     border-color: var(--clr-cyan);
     align-self: center;
+    animation: slideCyan 1000ms;
 }
 
 .feature__box--red {
     border-color: var(--clr-red);
+    animation: slideRed 1000ms;
 }
 
 .feature__box--orange {
     border-color: var(--clr-orange);
     margin-top: 30px;
+    animation: slideOrange 1000ms;
 }
 
 .feature__box--blue {
     border-color: var(--clr-blue);
     align-self: center;
+    animation: slideBlue 1000ms;
 }
 
 .feature__box-container {
