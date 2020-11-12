@@ -24,10 +24,19 @@ html {
 }
 
 body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--clr-gray-light);
     font-family: 'Poppins', sans-serif;
+    color: var(--clr-blue-dark);
     min-height: 100vh;
 }
 
 /* Utilities */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
 
 /* Animations */
