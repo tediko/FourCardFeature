@@ -28,6 +28,7 @@ h1.feature__heading {
 .feature__features {
     display: flex;
     justify-content: center;
+    align-items: center;
     text-align: left;
 }
 
@@ -76,7 +77,6 @@ h1.feature__heading {
 
 .feature__box--cyan {
     border-color: var(--clr-cyan);
-    align-self: center;
     animation: slideCyan 1000ms;
 }
 
@@ -93,7 +93,6 @@ h1.feature__heading {
 
 .feature__box--blue {
     border-color: var(--clr-blue);
-    align-self: center;
     animation: slideBlue 1000ms;
 }
 
