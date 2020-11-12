@@ -41,27 +41,152 @@ body {
 }
 
 /* Animations */
-@keyframes boxShake {
+@keyframes slideCyan {
     0% {
-        transform: rotate(1deg);
-    }
-
-    50% {
-        transform: rotate(-1deg);
-        opacity: 0.7;
+        opacity: 0;
+        transform: translate(-50px, 0px);
     }
 
     100% {
-        transform: rotate(0deg);
+        opacity: 1;
+        transform: translate(0);
     }
 }
 
-@keyframes diagonal {
+@keyframes slideBlue {
     0% {
-        transform: translate(50px, 50px);
+        opacity: 0;
+        transform: translate(50px, 0px);
     }
 
     100% {
+        opacity: 1;
         transform: translate(0);
+    }
+}
+
+@keyframes slideRed {
+    0% {
+        opacity: 0;
+        transform: translate(0px, 50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes slideOrange {
+    0% {
+        opacity: 0;
+        transform: translate(0px, -50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+/* Animations media queries */
+
+@media (max-width: 880px) {
+    @keyframes slideCyan {
+        0% {
+            opacity: 0;
+            transform: translate(-50px, -50px);
+        }
+    
+        100% {
+            opacity: 1;
+            transform: translate(0);
+        }
+    }
+    
+    @keyframes slideBlue {
+        0% {
+            opacity: 0;
+            transform: translate(50px, -50px);
+        }
+    
+        100% {
+            opacity: 1;
+            transform: translate(0);
+        }
+    }
+    
+    @keyframes slideRed {
+        0% {
+            opacity: 0;
+            transform: translate(-50px, 50px);
+        }
+    
+        100% {
+            opacity: 1;
+            transform: translate(0);
+        }
+    }
+    
+    @keyframes slideOrange {
+        0% {
+            opacity: 0;
+            transform: translate(50px, 50px);
+        }
+    
+        100% {
+            opacity: 1;
+            transform: translate(0);
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    @keyframes slideCyan {
+        0% {
+            opacity: 0;
+            transform: translate(-30px, 0);
+        }
+    
+        100% {
+            opacity: 1;
+            transform: translate(0);
+        }
+    }
+    
+    @keyframes slideBlue {
+        0% {
+            opacity: 0;
+            transform: translate(30px, 0);
+        }
+    
+        100% {
+            opacity: 1;
+            transform: translate(0);
+        }
+    }
+    
+    @keyframes slideRed {
+        0% {
+            opacity: 0;
+            transform: translate(30px, 0);
+        }
+    
+        100% {
+            opacity: 1;
+            transform: translate(0);
+        }
+    }
+    
+    @keyframes slideOrange {
+        0% {
+            opacity: 0;
+            transform: translate(-30px, 0);
+        }
+    
+        100% {
+            opacity: 1;
+            transform: translate(0);
+        }
     }
 }
