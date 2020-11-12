@@ -1,1 +1,57 @@
 /* Feature section */
+h1.feature__heading {
+    font-weight: 200;
+    font-size: 2.5rem;
+}
+
+.feature__span {
+    font-weight: 600;
+}
+
+.feature__text {
+    font-size: 1rem;
+    color: var(--clr-blue-grayish);
+}
+
+.feature__features {
+    display: flex;
+}
+
+.feature__box {
+    display: flex;
+    flex-flow: column;
+    background: #fff;
+    padding: 25px 32px 32px 32px;
+    border-top: 4px solid black;
+    border-radius: 4px;
+    height: 250px;
+    max-width: 350px;
+    width: 100%;
+}
+
+.feature__box--cyan {
+    border-color: var(--clr-cyan);
+}
+
+.feature__box--red {
+    border-color: var(--clr-red);
+}
+
+.feature__box--orange {
+    border-color: var(--clr-orange);
+}
+
+.feature__box--blue {
+    border-color: var(--clr-blue);
+}
+
+h2.feature__heading {
+    font-size: 1.33rem;
+}
+
+.feature__desc {
+    font-size: 0.86rem;
+    color: var(--clr-blue-grayish);
+    margin-top: 10px;
+    letter-spacing: 0.01rem;
+}
