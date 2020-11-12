@@ -54,7 +54,7 @@ body {
 @keyframes slideCyan {
     0% {
         opacity: 0;
-        transform: translate(-50px, 0px);
+        transform: translate(50px, 0px);
     }
 
     100% {
@@ -66,7 +66,7 @@ body {
 @keyframes slideBlue {
     0% {
         opacity: 0;
-        transform: translate(50px, 0px);
+        transform: translate(-50px, 0px);
     }
 
     100% {
