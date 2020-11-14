@@ -146,12 +146,12 @@ h2.feature__heading {
 
 @media (max-width: 500px) {
     h1.feature__heading {
-        font-size: 1.1rem;
+        font-size: 1.3rem;
         line-height: 1.8rem;
     }
 
     .feature__text {
-        font-size: 0.7rem;
+        font-size: 0.83rem;
         max-width: 205px;
         margin: 10px auto 49px auto;
     }
